@@ -1,0 +1,13 @@
+{
+    "name": "Кафе",
+    "email": "zov@gmail.com",
+    "number": "7949234123",
+    "salary": 235234,
+    "bankrot": false,
+    "drinks": [
+        "water",
+        "juice",
+        "tea",
+        "coffee"
+    ]
+}
