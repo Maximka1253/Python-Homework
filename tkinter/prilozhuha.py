@@ -17,6 +17,7 @@ def save_answers():
 
 root = tk.Tk()
 root.title("Анкета: игровые предпочтения")
+root.geometry('800x675')
 
 tk.Label(root, text="Ваше имя:").pack()
 entry_name = tk.Entry(root)
@@ -28,7 +29,7 @@ tk.OptionMenu(root, favorite_genre, "RPG", "Шутеры", "Стратегии",
 
 tk.Label(root, text="Любимая игровая платформа:").pack()
 favorite_platform = tk.StringVar(value="ПК")
-tk.OptionMenu(root, favorite_platform, "ПК", "PlayStation", "Xbox", "Nintendo", "Мобильные").pack()
+tk.OptionMenu(root, favorite_platform, "ПК", "PlayStation", "Xbox", "Nintendo", "Мобильные","Другое").pack()
 
 tk.Button(root, text="Сохранить", command=save_answers).pack(pady=10)
 
