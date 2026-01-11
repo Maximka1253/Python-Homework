@@ -11,6 +11,7 @@ def get_weather():
     result = requests.get(url, params=params)
     weather = result.json()
 
+    info['text'] = f'{str(weather["name"])}: {weather["main"]["temp"]}'
     print(weather)
 
 root['bg'] = '#fafafa'
